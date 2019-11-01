@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", segoe UI, sans-serif !important;
+}
+
+.jumbotron, footer {
+  background: #d1f0f6 !important;
+}
+
+.jumbotron .text-center {
+  padding-top: 10rem !important;
+}

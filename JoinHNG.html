@@ -1,0 +1,281 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Learning Html</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="my first html page">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <header id="header">
+            <!-- Just an image -->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <a class="navbar-brand" href="#">
+                    <img src="https://res.cloudinary.com/phiileo/image/upload/v1571147073/brand-logo_tx0mdt.png"
+                        width="250" height="50" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HNGi 7.0</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mentors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary text-white" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--End of haeder-->
+        <div class="jumbotron">
+            <div class="text-center pt-4">
+                <h1 class="mentor">Mentor Account Set Up</h1>
+                <p class="gratitude">Thanks for your interest in becoming a HNG mentor.<br> Kindly fill out this form.
+                </p>
+            </div>
+        </div>
+        <!--Form1-->
+
+        <div class="container mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <p class=" col-12 text-center area mb-5">Choose an area of expertise</p>
+                    <div id="wrap" class="text-justify  mb-3 wrap mx-auto">
+                        <!--Form control-->
+                        <div class="checkboxes">
+                            <div class="custom-control custom-checkbox mb-1">
+                                <input id="check1" type="checkbox" name="area_of_expertise[]"
+                                    class="checkbox mr-1 custom-control-input" value="Frontend">
+                                <label class="accordion-label custom-control-label pr-2" for="check1">Frontend
+                                    Development</label>
+
+                                <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                </a>
+
+                                <div class="collapse" id="collapseExample">
+                                    <p><span>Preferred Skills: </span> HTML, CSS, JavaScript, Bootstrap, JQuery</p>
+                                </div>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-1">
+                                <input id="check2" name="area_of_expertise[]" type="checkbox"
+                                    class="checkbox mr-1 custom-control-input" value="Backend">
+                                <label class="accordion-label custom-control-label" for="check2">Backend
+                                    Development</label>
+                                <i class="fa fa-angle-down fa-icon" aria-hidden="true"></i>
+                                <div class="accordion-content">
+                                    <p><span>Preferred Skills: </span>PHP/Laravel, NodeJS, SQL, MongoDB</p>
+                                </div>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-1">
+                                <input id="check3" name="area_of_expertise[]" type="checkbox"
+                                    class="checkbox mr-1 custom-control-input" value="Machine-learning">
+                                <label class="accordion-label custom-control-label" for="check3">Machine
+                                    Learning</label>
+                                <i class="fa fa-angle-down fa-icon" aria-hidden="true"></i>
+                                <div class="accordion-content">
+                                    <p><span>Preferred Skills: </span>Python, TensorFlow</p>
+                                </div>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-1">
+                                <input id="check4" name="area_of_expertise[]" type="checkbox"
+                                    class="checkbox mr-1 custom-control-input" value="UI/UX-Design">
+                                <label class="accordion-label custom-control-label" for="check4">UI/UX Design</label>
+                                <i class="fa fa-angle-down fa-icon" aria-hidden="true"></i>
+                                <div class="accordion-content">
+                                    <p><span>Preferred Skills: </span>Creative, Attention to detail, Figma</p>
+                                </div>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-1">
+                                <input id="check5" name="area_of_expertise[]" type="checkbox"
+                                    class="checkbox mr-1 custom-control-input" value="Mobile-Development">
+                                <label class="accordion-label custom-control-label" for="check5">Mobile
+                                    Development</label>
+                                <i class="fa fa-angle-down fa-icon" aria-hidden="true"></i>
+                                <div class="accordion-content">
+                                    <p><span>Preferred Skills: </span>Android, Java, Kotlin, Flutter</p>
+                                </div>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-1">
+                                <input id="check6" name="area_of_expertise[]" type="checkbox"
+                                    class="checkbox mr-1 custom-control-input" value="Digital-marketing">
+                                <label class="accordion-label custom-control-label" for="check6">Digital
+                                    Marketing</label>
+                                <i class="fa fa-angle-down fa-icon" aria-hidden="true"></i>
+                                <div class="accordion-content">
+                                    <p><span>Preferred Skills: </span> Adwords, SEO, Content writing, E-mail and
+                                        Facebook Marketing </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Form2-->
+                <div class="row d-flex mt-5 mb-5" id="form-contner">
+                    <div class="col-lg-8 m-auto">
+                        <div class="second">
+
+                            <div class="image-upload form-group">
+                                <label for="file-input">
+                                    <div class="circle"><i class="fas fa-camera"></i></div>
+                                </label>
+                                <input id="file-input" class="form-control-file" type="file"/ name="image">
+                            </div>
+                            <div class="click text-center">Click the image above to upload a profile photo</div>
+                            <div class="jpg">JPG or PNG. Max size of 400k</div>
+
+
+
+                        </div>
+                        <div class="form">
+                            <div class="form-group">
+                                <label for=""></label>
+                                <input type="text" name="username" class="form-control" placeholder="Esther Okafor"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <input type="Email" name="email address" Placeholder="Email" class="form-control"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <input type="#" name="phonenumber" placeholder="Phone Number" class="form-control"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="What do you do?" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="url" placeholder="Link to your portfolio (if you have any)"
+                                    class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="url" placeholder="Link to CV, (Linkedin profile or any other link)"
+                                    class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="How many years experience do you have?"
+                                    class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Why are you interested in mentorinh in HNG?"
+                                    class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="What state are you located in?" class="form-control"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="What's your current employment status?"
+                                    class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea type="text" placeholder="Briefly tell us about yourself." class="form-control"
+                                    required></textarea>
+                            </div>
+                        </div>
+
+                        <!--The footer-->
+                        <footer id="footer">
+                            <div class="container">
+
+                                <img id="footer-logo"
+                                    src="https://res.cloudinary.com/phiileo/image/upload/v1571147073/brand-logo_tx0mdt.png">
+
+                                <nav class="footer-nav">
+                                    <div class="row">
+                                        <div class="col-md-3 pb-3">
+                                            <h2 class="skyblue-text">Quick Links</h2>
+                                            <div id="link-list">
+                                                <a href="join-intern.php" class="skyblue-text">Join HNG</a>
+                                                <a href="index.php" class="skyblue-text">About HNG</a>
+                                                <a href="donate.php" class="skyblue-text">Become a Sponsor</a>
+                                                <a href="MentorSetUpPage2.php" class="skyblue-text">Sign up as
+                                                    Mentor</a>
+                                                <a href="faq.php" class="skyblue-text">FAQ</a>
+                                                <a href="intern-experience.php" class="skyblue-text">Past Intern
+                                                    Experience</a>
+                                                <a href="request_certificate.php">Request Certificate</a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 pb-3 footer-section">
+                                            <h2 class="skyblue-text">Contact Us</h2>
+                                            <div>
+                                                <a href="tel:+2348123456789">
+                                                    <strong>
+                                                        Phone: <br />
+                                                    </strong>
+                                                    +234 812 345 6789
+                                                </a>
+                                                <br />
+                                                <a href="mailto:interns@hng.tech">
+                                                    <strong>
+                                                        Email: <br />
+                                                    </strong>
+                                                    interns@hng.tech
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 pb-3 footer-section">
+                                            <h2 class="skyblue-text">Office Address</h2>
+                                            <p id="address">
+                                                <a
+                                                    href="https://www.google.com/maps/place/Hotels.ng/@6.5091808,3.3795046,17z/data=!4m13!1m7!3m6!1s0x103b8cf61c9c63c5:0xb2ef3a96e7eb315e!2s3+Birrel+Ave,+Yaba+100001,+Lagos!3b1!8m2!3d6.5091808!4d3.3795046!3m4!1s0x103b8c58aa4e0931:0x9ddabc4518c15d14!8m2!3d6.5091808!4d3.3795046">3
+                                                    Birrel Avenue <br /> Sabo, Yaba, <br /> Lagos state</a> <br>
+
+
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3 pb-3">
+                                            <h2 class="skyblue-text">Follow Us</h2>
+                                            <div id="socials">
+                                                <a href="https://twitter.com/hnginternship"
+                                                    title="Follow on Twitter!"><img
+                                                        src="https://res.cloudinary.com/jaycodist/image/upload/v1570722900/twitter-logo_m1mgzi.svg"></a>
+                                                <a href="https://www.facebook.com/HNG-Internship-115577009820117/"><img
+                                                        title="Follow on Facebook!"
+                                                        src="https://res.cloudinary.com/jaycodist/image/upload/v1570722900/facebook-logo_bw1hal.svg"></a>
+                                                <a href="https://dribble.com"><img title="Follow on Dribble!"
+                                                        src="https://res.cloudinary.com/jaycodist/image/upload/v1570722900/dribble-logo_w4vwuz.svg"></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </nav>
+                                <p class="copyright">&copy; 2019, HNG Internship. All rights reserved.</p>
+                            </div>
+                        </footer>
+                        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                            crossorigin="anonymous"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                            crossorigin="anonymous"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                            crossorigin="anonymous"></script>
+    </body>
+
+    </html>
